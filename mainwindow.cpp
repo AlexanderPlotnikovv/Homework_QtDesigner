@@ -7,7 +7,14 @@ MainWindow::MainWindow(QWidget *parent)
 
 {
     ui->setupUi(this);
-    ui->actionClose = new QAction("Exit", this);
+    ui->actionOpen_dialog = new QAction("Open dialog", this);
+    connect(ui->actionOpen_dialog, SIGNAL(triggered()), this, SLOT(openDialog()));
+}
+
+void MainWindow::openDialog()
+{
+    Form form;
+    int result = form.exec();
 }
 
 MainWindow::~MainWindow()

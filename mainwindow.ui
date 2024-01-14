@@ -14,72 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>Enter Login:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>Enter Password:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="3">
-     <widget class="QLineEdit" name="lineEdit_3"/>
-    </item>
-    <item row="3" column="3">
-     <widget class="QLineEdit" name="lineEdit_4"/>
-    </item>
-    <item row="1" column="3">
-     <widget class="QLineEdit" name="lineEdit_2"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Enter DataBase Name:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Enter Host Name:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="3">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>Ok</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="3">
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="text">
-       <string>Cancel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>Enter Port:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="3">
-     <widget class="QLineEdit" name="lineEdit_5"/>
-    </item>
-   </layout>
+   <layout class="QGridLayout" name="gridLayout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menuBar">
@@ -95,7 +30,8 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_dialog_2"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -114,97 +50,17 @@
     <string>Close</string>
    </property>
   </action>
+  <action name="actionOpen_dialog">
+   <property name="text">
+    <string>Open dialog</string>
+   </property>
+  </action>
+  <action name="actionOpen_dialog_2">
+   <property name="text">
+    <string>Open dialog</string>
+   </property>
+  </action>
  </widget>
- <tabstops>
-  <tabstop>lineEdit</tabstop>
-  <tabstop>lineEdit_2</tabstop>
-  <tabstop>lineEdit_3</tabstop>
-  <tabstop>lineEdit_4</tabstop>
-  <tabstop>lineEdit_5</tabstop>
-  <tabstop>pushButton</tabstop>
-  <tabstop>pushButton_2</tabstop>
- </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEdit</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>151</x>
-     <y>511</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>221</x>
-     <y>82</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEdit_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>168</x>
-     <y>509</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>198</x>
-     <y>157</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEdit_3</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>105</x>
-     <y>504</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>135</x>
-     <y>228</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEdit_4</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>155</x>
-     <y>509</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>153</x>
-     <y>301</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEdit_5</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>409</x>
-     <y>508</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>402</x>
-     <y>379</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

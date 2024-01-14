@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-//#include "dialog.h"
-#include <QtSql>
+#include "form.h"
+#include <QAction>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,16 +18,13 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+    //QMenuBar* menuBar;
+    //menuBar()->addAction(actionOpen_dialog);
+public slots:
+    void openDialog();
 
 private:
     Ui::MainWindow *ui;
-    //QDialog* d;
-    QSqlDatabase* db;
-    void InputHost();
-    void InputDBName();
-    void InputLogin();
-    void InputPassword();
-    void InputPort();
+    QAction* actionOpen_dialog;
 };
 #endif // MAINWINDOW_H

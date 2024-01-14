@@ -23,6 +23,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Homework_QtDesigner
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        form.h form.cpp form.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Homework_QtDesigner APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
